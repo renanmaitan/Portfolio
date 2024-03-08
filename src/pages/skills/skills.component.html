@@ -1,0 +1,15 @@
+<main>
+    <h1>Habilidades</h1>
+    <h2>(clique para conhecer os projetos)</h2>
+    <div class="container">
+        @for (skill of skills; track skill.name){
+            <app-skill [skill]="skill"></app-skill>
+        }
+    </div>
+    <h1>Lingaguens de Programação</h1>
+    <div class="container">
+        @for (language of languages; track language.name){
+            <app-skill [skill]="language"></app-skill>
+        }
+    </div>
+</main>
