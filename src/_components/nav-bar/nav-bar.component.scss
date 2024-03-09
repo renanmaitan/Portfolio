@@ -7,30 +7,41 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
     ul {
         margin-left: 100px;
         list-style: none;
         display: flex;
+
+        li {
+            padding-inline: 50px;
+            font-size: 1em;
+
+            &.active a {
+                color: $nav-hover-color;
+            }
+        }
     }
-    li {
-        padding-inline: 50px;
-        font-size: 1em;
-    }
+
     a {
         text-decoration: none;
         color: $strong-text-color;
+
         &:hover {
-           color: $nav-hover-color;
-           cursor: pointer;
+            color: $nav-hover-color;
+            cursor: pointer;
         }
     }
-    .logo{
+
+    .logo {
         font-size: 2em;
         font-weight: bold;
         color: $strong-text-color;
+
         i {
             margin-right: 20px;
         }
+
         display: flex;
         flex-direction: row;
         align-items: center;
