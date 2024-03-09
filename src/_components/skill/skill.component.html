@@ -1,4 +1,11 @@
-<div class="skill" [class.redirect-item]="skill.redirect">
+<div *ngIf="skill.redirect, else noRedirect" class="skill redirect-item" routerLink="{{skill.url}}">
     <p>{{skill.name}}</p>
     <img src={{skill.src}} alt="skill.name" class="skill-img">
 </div>
+
+<ng-template #noRedirect>
+    <div class="skill">
+        <p>{{skill.name}}</p>
+        <img src={{skill.src}} alt="skill.name" class="skill-img">
+    </div>
+</ng-template>

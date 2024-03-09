@@ -1,9 +1,14 @@
+import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-skill',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterModule,
+    NgIf
+  ],
   templateUrl: './skill.component.html',
   styleUrl: './skill.component.scss'
 })
