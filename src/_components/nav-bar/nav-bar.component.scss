@@ -12,9 +12,10 @@
         margin-left: 100px;
         list-style: none;
         display: flex;
+        align-items: center;
 
         li {
-            padding-inline: 50px;
+            padding-inline: 20px;
             font-size: 1em;
 
             &.active a {
@@ -45,5 +46,26 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+
+        ul {
+            margin-left: 0;
+            margin-top: 10px;
+            padding-inline: 0;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            background-color: #f8f9fa;
+            border-top: 1px solid #dee2e6;
+        }
+
+        li {
+            padding-block: 10px;
+            width: 100%;
+            border-bottom: 1px solid #dee2e6;
+        }
     }
 }
