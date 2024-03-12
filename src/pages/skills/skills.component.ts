@@ -12,16 +12,16 @@ import { SkillComponent } from '../../_components/skill/skill.component';
 })
 export class SkillsComponent {
   skills = [
-    {name: 'Electron', src: 'assets/electron-icon.png', redirect: true, url: '/home'},
-    {name: 'Flask', src: 'assets/flask-icon.png', redirect: true, url: '/skills'},
-    {name: 'Angular', src: 'assets/angular-icon.png', redirect: true},
-    {name: 'React Native', src: 'assets/react-native-icon.png', redirect: true},
+    {name: 'Electron', src: 'assets/imgs/skills/electron-icon.png', redirect: true, url: '/home'},
+    {name: 'Flask', src: 'assets/imgs/skills/flask-icon.png', redirect: true, url: '/skills'},
+    {name: 'Angular', src: 'assets/imgs/skills/angular-icon.png', redirect: true},
+    {name: 'React Native', src: 'assets/imgs/skills/react-native-icon.png', redirect: true},
   ];
   languages = [
-    {name: 'JavaScript', src: 'assets/js-icon.png', redirect: false},
-    {name: 'Python', src: 'assets/python-icon.png', redirect: false},
-    {name: 'Typescript', src: 'assets/typescript-icon.png', redirect: false},
-    {name: 'C/C++', src: 'assets/cpp-icon.png', redirect: false},
-    {name: 'Java', src: 'assets/java-icon.png', redirect: false},
+    {name: 'JavaScript', src: 'assets/imgs/skills/js-icon.png', redirect: false},
+    {name: 'Python', src: 'assets/imgs/skills/python-icon.png', redirect: false},
+    {name: 'Typescript', src: 'assets/imgs/skills/typescript-icon.png', redirect: false},
+    {name: 'C/C++', src: 'assets/imgs/skills/cpp-icon.png', redirect: false},
+    {name: 'Java', src: 'assets/imgs/skills/java-icon.png', redirect: false},
   ];
 }
