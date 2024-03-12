@@ -1,0 +1,23 @@
+<swiper-container 
+    loop="true" 
+    navigation="true" 
+    pagination-clickable="true" 
+    class="carousel" 
+    slides-per-view="4" 
+    speed="500" 
+    pagination="true"
+    breakpoints='{"0": {"slidesPerView": 1}, "576": {"slidesPerView": 2}, "768": {"slidesPerView": 3}, "992": {"slidesPerView": 4}}'
+    >
+    @for(slide of slides; track slide.title){
+    <swiper-slide class="carousel-slide">
+        <img src="{{slide.src}}" alt="Imagem do projeto {{slide.title}}">
+        <div class="carousel-slide-content">
+            <h2>{{slide.title}}</h2>
+            <p>({{slide.subheader}})</p>
+            <p>{{slide.description}}</p>
+        </div>
+            <button (click)="openProject(slide)">Ver mais</button>
+        
+    </swiper-slide>
+    }
+</swiper-container>
