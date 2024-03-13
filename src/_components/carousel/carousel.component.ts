@@ -1,4 +1,4 @@
-import { Component, Input, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, Input, CUSTOM_ELEMENTS_SCHEMA, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
@@ -10,13 +10,22 @@ import { Component, Input, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 })
 
 export class CarouselComponent {
-  @Input() slides: Slide[] = [];
+  @Input() slides: Slides = {};
+  @Output() openProjectEvent = new EventEmitter<Slide>();
+  keys: string[] = [];
+
+  ngOnInit() {
+    this.keys = Object.keys(this.slides);
+  }
   
   openProject(slide:Slide) {
-    console.log(slide);
+    this.openProjectEvent.emit(slide);
   }
 }
 
+interface Slides {
+  [key: string]: Slide;
+}
 interface Slide {
   src: string;
   title: string;
