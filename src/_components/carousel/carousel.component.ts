@@ -10,7 +10,7 @@ import { Component, Input, CUSTOM_ELEMENTS_SCHEMA, Output, EventEmitter } from '
 })
 
 export class CarouselComponent {
-  @Input() slides: Slides = {};
+  @Input() slides!: any;
   @Output() openProjectEvent = new EventEmitter<string>();
   keys: string[] = [];
 
@@ -21,14 +21,4 @@ export class CarouselComponent {
   openProject(key: string) {
     this.openProjectEvent.emit(key);
   }
-}
-
-interface Slides {
-  [key: string]: Slide;
-}
-interface Slide {
-  src: string;
-  title: string;
-  subheader: string;
-  description: string;
 }

@@ -1,3 +1,4 @@
-<main class="container">
+<main [ngClass]="{'container': !showSlide}">
     <app-carousel ngSkipHydration="true" *ngIf="!showSlide" [slides]="slides" (openProjectEvent)="onOpenProjectEvent($event)"></app-carousel>
+    <app-project *ngIf="showSlide && selectedSlide" [project]="selectedSlide"></app-project>
 </main>
