@@ -11,15 +11,15 @@ import { Component, Input, CUSTOM_ELEMENTS_SCHEMA, Output, EventEmitter } from '
 
 export class CarouselComponent {
   @Input() slides: Slides = {};
-  @Output() openProjectEvent = new EventEmitter<Slide>();
+  @Output() openProjectEvent = new EventEmitter<string>();
   keys: string[] = [];
 
   ngOnInit() {
     this.keys = Object.keys(this.slides);
   }
   
-  openProject(slide:Slide) {
-    this.openProjectEvent.emit(slide);
+  openProject(key: string) {
+    this.openProjectEvent.emit(key);
   }
 }
 

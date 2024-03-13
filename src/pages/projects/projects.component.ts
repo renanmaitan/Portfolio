@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CarouselComponent } from '../../_components/carousel/carousel.component';
 import { NgIf } from '@angular/common';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -12,7 +13,8 @@ import { NgIf } from '@angular/common';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit{
+  constructor(private router: Router, private route: ActivatedRoute) { }
   slides: Slides = {
     "portfolio": {
       src: 'assets/imgs/projects/portfolio-project.png',
@@ -59,10 +61,23 @@ export class ProjectsComponent {
   };
 
   showSlide: boolean = false;
-  selectedSlide?: Slide;
+  selectedSlide?: string;
 
-  onOpenProjectEvent(slide: Slide) {
-    console.log('openProject', slide);
+  ngOnInit(): void {
+    this.route.params.subscribe(params => {
+      console.log(params);
+      if (params['id'] && this.slides[params['id']]) {
+        this.showSlide = true;
+        this.selectedSlide = params['id'];
+      }
+      else {
+        this.router.navigate(['projects']);
+      }
+    });
+  }
+
+  onOpenProjectEvent(key: string) {
+    this.router.navigate(['projects', key]);
   }
 }
 

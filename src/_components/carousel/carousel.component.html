@@ -1,6 +1,4 @@
 <swiper-container 
-    loop="true" 
-    navigation="true" 
     pagination-clickable="true" 
     class="carousel" 
     slides-per-view="4" 
@@ -16,7 +14,7 @@
             <p>({{slides[key].subheader}})</p>
             <p>{{slides[key].description}}</p>
         </div>
-            <button (click)="openProject(slides[key])">Ver mais</button>
+            <button (click)="openProject(key)">Ver mais</button>
         
     </swiper-slide>
     }
