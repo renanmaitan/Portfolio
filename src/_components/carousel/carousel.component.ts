@@ -19,6 +19,10 @@ export class CarouselComponent {
   }
   
   openProject(key: string) {
+    if (this.slides[key].url) {
+      window.open(this.slides[key].url, '_blank');
+      return;
+    }
     this.openProjectEvent.emit(key);
   }
 }

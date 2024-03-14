@@ -14,7 +14,7 @@
             <p>({{slides[key].subheader}})</p>
             <p>{{slides[key].description}}</p>
         </div>
-            <button (click)="openProject(key)">Ver mais</button>
+            <button (click)="openProject(key)">{{slides[key].btnText? slides[key].btnText : 'Ver mais'}}</button>
         
     </swiper-slide>
     }

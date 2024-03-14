@@ -6,14 +6,16 @@ export const slides: Slides = {
     title: 'Portfólio',
     subheader: 'Angular 17',
     description:
-      'Esse portfólio foi desenvolvido com Angular 17. (Clique no ver mais para ver o repositório no GitHub)',
+      'Esse portfólio foi desenvolvido com Angular 17.',
+    btnText: 'Ver no GitHub',
+    url: 'https://github.com/renanmaitan/Portfolio',
   },
   'electron-certificate': {
     src: 'assets/imgs/projects/electron-certificate-project.png',
     title: 'Electron Certificate',
     subheader: 'Electron',
     description:
-      'Electron é um aplicativo de geração de certificados seguindo um modelo defido pelo usuário.',
+      'Electron Certificate é um aplicativo de geração de certificados seguindo um modelo defido pelo usuário.',
   },
   'regnacraft': {
     src: 'assets/imgs/projects/regnacraft-project.png',

@@ -6,4 +6,6 @@ export interface Slide {
   title: string;
   subheader: string;
   description: string;
+  btnText?: string;
+  url?: string;
 }
