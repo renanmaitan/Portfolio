@@ -132,7 +132,7 @@ export const projects: Projects = {
         subtitle: "Esse texto contém: prints e repositório no GitHub",
         content: [
             {
-                text: `O Connect Med é uma aplicação móvel revolucionária para agendamento médico, 
+                text: `O Connect Med é uma aplicação móvel para agendamento médico, 
                 desenvolvida utilizando as tecnologias React Native, Expo e Firebase. Este aplicativo 
                 proporciona aos usuários uma experiência intuitiva e eficiente para agendar consultas médicas, 
                 além de oferecer recursos abrangentes para médicos e pacientes.`
