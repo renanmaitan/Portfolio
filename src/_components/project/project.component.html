@@ -1,8 +1,22 @@
 <section id="project" class="project">
-    <div class="project-cover">
-        <div class="project-cover-content">
-            <h1 class="project-title">{{ project.title }}</h1>
-            <p class="project-description">{{ project.description }}</p>
-        </div>
+  <div class="project-cover">
+    <div class="image-container" [ngStyle]="{ 'background-image': 'url(' + project.coverSrc + ')' }">
     </div>
+    <div class="title-container">
+      <h1 class="project-title">{{ project.title }}</h1>
+      <p class="project-subtitle">({{project.subtitle}})</p>
+    </div>
+  </div>
+  <div class="project-content-container">
+    @for (content of project.content; track content){
+      <div class="project-content">
+        <p *ngIf="content.text">{{ content.text }}</p>
+        <img *ngIf="content.imageSrc" [src]="content.imageSrc" alt="{{ content.imageAlt }}" />
+        <div *ngIf="content.url">
+          <span>{{content.urlText}}: </span>
+          <a href="{{ content.url }}" target="_blank">{{ content.url }}</a>
+        </div>
+      </div>
+    }
+  </div>
 </section>

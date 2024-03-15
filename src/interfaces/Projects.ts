@@ -1,9 +1,10 @@
 interface imgContent {
-  src: string;
+  imageSrc: string;
+  imageAlt: string;
 }
 
 interface titleContent {
-  text: string;
+  title: string;
   fontSize: string;
 }
 
@@ -11,12 +12,18 @@ interface textContent {
   text: string;
 }
 
-type content = imgContent | textContent | titleContent;
+interface urlContent {
+  url: string;
+  urlText: string;
+}
+
+type content = imgContent | textContent | titleContent | urlContent;
 
 export interface Projects {
   [key: string]: {
     coverSrc: string;
     title: string;
+    subtitle: string;
     content: content[];
   };
 }
