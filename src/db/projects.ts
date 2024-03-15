@@ -125,5 +125,95 @@ export const projects: Projects = {
                 imageAlt: "RegnaCraft Screenshot 6"
             }
         ]
+    },
+    "connect-med": {
+        coverSrc: "assets/imgs/projects/connect-med-project.jpeg",
+        title: "Connect Med",
+        subtitle: "Esse texto contém: prints e repositório no GitHub",
+        content: [
+            {
+                text: `O Connect Med é uma aplicação móvel revolucionária para agendamento médico, 
+                desenvolvida utilizando as tecnologias React Native, Expo e Firebase. Este aplicativo 
+                proporciona aos usuários uma experiência intuitiva e eficiente para agendar consultas médicas, 
+                além de oferecer recursos abrangentes para médicos e pacientes.`
+            },
+            {
+                text: `Para os pacientes, o Connect Med oferece uma variedade de recursos úteis, incluindo a 
+                capacidade de pesquisar médicos por especialidade, selecionar horários disponíveis para agendamento, 
+                visualizar um histórico detalhado de consultas passadas e futuras, cancelar agendamentos quando 
+                necessário e gerenciar suas informações cadastrais de forma segura e conveniente.`
+            },
+            {
+                text: `Por outro lado, os médicos têm acesso a uma interface especializada que lhes permite visualizar 
+                e gerenciar suas consultas agendadas. Eles podem cancelar consultas, ajustar seus dados cadastrais, 
+                como dias de atendimento semanal, intervalos de horário e preço das consultas. Além disso, os médicos 
+                têm a flexibilidade de bloquear um dia inteiro na agenda ou apenas horários específicos, para se adaptarem 
+                às suas necessidades individuais e disponibilidade.`
+            },
+            {
+                text: `Com o Connect Med, tanto médicos quanto pacientes se beneficiam de uma plataforma inovadora que 
+                simplifica e agiliza o processo de agendamento médico, proporcionando maior conveniência e eficiência 
+                para todos os envolvidos.`
+            },
+            {
+                url: "https://github.com/renanmaitan/ConnectMedApp",
+                urlText: "Link do repositório"
+            },
+            {
+                text: `A seguir, algumas imagens do aplicativo:`
+            }, //13 imagens
+            {
+                imageSrc: "assets/imgs/project-imgs/connect-med/1.jpeg",
+                imageAlt: "Connect Med Screenshot 1"
+            },
+            {
+                imageSrc: "assets/imgs/project-imgs/connect-med/2.jpeg",
+                imageAlt: "Connect Med Screenshot 2"
+            },
+            {
+                imageSrc: "assets/imgs/project-imgs/connect-med/3.jpeg",
+                imageAlt: "Connect Med Screenshot 3"
+            },
+            {
+                imageSrc: "assets/imgs/project-imgs/connect-med/4.jpeg",
+                imageAlt: "Connect Med Screenshot 4"
+            },
+            {
+                imageSrc: "assets/imgs/project-imgs/connect-med/5.jpeg",
+                imageAlt: "Connect Med Screenshot 5"
+            },
+            {
+                imageSrc: "assets/imgs/project-imgs/connect-med/6.jpeg",
+                imageAlt: "Connect Med Screenshot 6"
+            },
+            {
+                imageSrc: "assets/imgs/project-imgs/connect-med/7.jpeg",
+                imageAlt: "Connect Med Screenshot 7"
+            },
+            {
+                imageSrc: "assets/imgs/project-imgs/connect-med/8.jpeg",
+                imageAlt: "Connect Med Screenshot 8"
+            },
+            {
+                imageSrc: "assets/imgs/project-imgs/connect-med/9.jpeg",
+                imageAlt: "Connect Med Screenshot 9"
+            },
+            {
+                imageSrc: "assets/imgs/project-imgs/connect-med/10.jpeg",
+                imageAlt: "Connect Med Screenshot 10"
+            },
+            {
+                imageSrc: "assets/imgs/project-imgs/connect-med/11.jpeg",
+                imageAlt: "Connect Med Screenshot 11"
+            },
+            {
+                imageSrc: "assets/imgs/project-imgs/connect-med/12.jpeg",
+                imageAlt: "Connect Med Screenshot 12"
+            },
+            {
+                imageSrc: "assets/imgs/project-imgs/connect-med/13.jpeg",
+                imageAlt: "Connect Med Screenshot 13"
+            }
+        ]
     }
-};
+}

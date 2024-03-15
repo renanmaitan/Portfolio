@@ -21,7 +21,7 @@ export const skills = [
     name: 'React Native',
     src: 'assets/imgs/skills/react-native-icon.png',
     redirect: true,
-    url: '/projects',
+    url: '/projects/connect-med',
   },
 ];
 export const languages = [
