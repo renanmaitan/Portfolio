@@ -53,6 +53,7 @@
 
       .project-subtitle {
         font-size: 1.2rem;
+        text-align: center;
 
         @media (max-width: 768px) {
           font-size: 1rem;
@@ -63,10 +64,13 @@
 
   .project-content-container {
     background-color: $content-background;
-    margin-top: 2%;
+    margin-top: -2%;
     width: 60vw;
     padding: 2%;
+    position: relative;
+    z-index: 10;
     border-radius: 1rem;
+    border: 1px solid #000;
 
     @media (max-width: 768px) {
       width: 80vw;
