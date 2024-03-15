@@ -26,7 +26,7 @@ export class ProjectsComponent implements OnInit{
   
   ngOnInit(): void {
     this.route.params.subscribe(params => {
-      if (params['id'] && this.slides[params['id']]) {
+      if (params['id'] && this.projects[params['id']]) {
         this.showSlide = true;
         this.selectedSlide = this.projects[params['id']];
       }
