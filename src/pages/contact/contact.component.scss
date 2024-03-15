@@ -1,0 +1,35 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    text-align: center;
+
+    h1{
+        margin-top: 2%;
+        margin-bottom: 1%;
+        font-size: 2rem;
+    }
+    h2 {
+        margin: 0;
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-bottom: 2%;
+    }
+
+    p, a {
+        font-family: "Truculenta";
+        font-size: 1.2rem;
+        margin: 0;
+        margin-left: 10px;
+        font-weight: 600;
+    }
+
+    .item-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
