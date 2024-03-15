@@ -39,4 +39,24 @@
             transform: scale(1.1);
         }
     }
+
+    @media screen and (max-width: 768px){
+        p {
+            max-width: 100%;
+            font-size: 0.9rem;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        button {
+            margin-top: 8%;
+        }
+    }
 }
