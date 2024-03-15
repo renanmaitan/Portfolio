@@ -30,7 +30,7 @@
       background-position: top;
     }
 
-    .title-container{
+    .title-container {
       position: absolute;
       align-items: center;
       justify-content: center;
@@ -45,15 +45,15 @@
         padding: 0.5rem;
         border-radius: 0.5rem;
         margin: 0;
-  
+
         @media (max-width: 768px) {
           font-size: 1.5rem;
         }
       }
-  
+
       .project-subtitle {
         font-size: 1.2rem;
-  
+
         @media (max-width: 768px) {
           font-size: 1rem;
         }
@@ -80,9 +80,11 @@
         text-indent: 1rem;
       }
       img {
-        margin-left: 20%;
-        width: 60%;
-        height: auto;
+        width: 3in;
+        margin-left: calc((100% - 3in)/2);
+      }
+      span {
+        margin-left: 1rem;
       }
     }
   }
