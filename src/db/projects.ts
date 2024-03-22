@@ -90,6 +90,11 @@ export const projects: Projects = {
                 Isso pode resultar em lentidão durante o primeiro acesso.`
             },
             {
+                text: `Pro fim, os commits foram escondidos para proteger a chave secret do stripe, tendo 
+                em vista que o repositório se encontra público. O stripe não envia eventos de teste para 
+                o webhook, então não é possível testar a integração.`
+            },
+            {
                 url: "https://regnacraft.onrender.com/",
                 urlText: "Link do projeto rodando"
             },
