@@ -23,12 +23,12 @@ export const slides: Slides = {
     subheader: 'Electron',
     description:
       'Electron Certificate é um aplicativo de geração de certificados seguindo um modelo defido pelo usuário.',
-  },
-  'regnacraft': {
-    src: 'assets/imgs/projects/regnacraft-project.png',
-    title: 'RegnaCraft',
-    subheader: 'Flask',
-    description:
-      'Site para um servidor de minecraft. Possui um sistema de loja virtual para compra de vips.',
   }
+  // 'regnacraft': {
+  //   src: 'assets/imgs/projects/regnacraft-project.png',
+  //   title: 'RegnaCraft',
+  //   subheader: 'Flask',
+  //   description:
+  //     'Site para um servidor de minecraft. Possui um sistema de loja virtual para compra de vips.',
+  // }
 };
