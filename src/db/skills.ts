@@ -6,10 +6,10 @@ export const skills = [
     url: '/projects/electron-certificate',
   },
   {
-    name: 'Flask',
-    src: 'assets/imgs/skills/flask-icon.png',
+    name: 'Spring',
+    src: 'assets/imgs/skills/spring-icon.png',
     redirect: true,
-    url: '/projects/regnacraft',
+    url: '/projects/catalogo-api',
   },
   {
     name: 'Angular',

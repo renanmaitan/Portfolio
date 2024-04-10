@@ -10,6 +10,13 @@ export const slides: Slides = {
     btnText: 'Ver no GitHub',
     url: 'https://github.com/renanmaitan/Portfolio',
   },
+  'catalogo-api': {
+    src: 'assets/imgs/projects/catalogo-api-project.png',
+    title: 'Catalogo API',
+    subheader: 'Spring Framework',
+    description:
+      'API desenvolvida para ser consumida por um site online de exibição de produtos.',
+  },
   'connect-med': {
     src: 'assets/imgs/projects/connect-med-project.jpeg',
     title: 'Connect Med',
@@ -24,11 +31,4 @@ export const slides: Slides = {
     description:
       'Electron Certificate é um aplicativo de geração de certificados seguindo um modelo defido pelo usuário.',
   }
-  // 'regnacraft': {
-  //   src: 'assets/imgs/projects/regnacraft-project.png',
-  //   title: 'RegnaCraft',
-  //   subheader: 'Flask',
-  //   description:
-  //     'Site para um servidor de minecraft. Possui um sistema de loja virtual para compra de vips.',
-  // }
 };

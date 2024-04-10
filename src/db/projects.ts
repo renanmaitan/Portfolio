@@ -68,69 +68,56 @@ export const projects: Projects = {
             }
         ]
     },
-    // "regnacraft": {
-    //     coverSrc: "assets/imgs/projects/regnacraft-project.png",
-    //     title: "RegnaCraft",
-    //     subtitle: "Esse texto contém: prints, repositório no GitHub e link do projeto rodando",
-    //     content: [
-    //         {
-    //             text: `RegnaCraft é uma plataforma dedicada ao suporte de um possível servidor 
-    //             de Minecraft. Desenvolvido com a tecnologia Flask, um framework Python, o site 
-    //             oferece uma variedade de recursos para os jogadores.`
-    //         },
-    //         {
-    //             text: `Uma característica central do RegnaCraft é sua loja virtual, onde 
-    //             os usuários podem adquirir vantagens no servidor, como pacotes VIPs. Além disso, 
-    //             há uma página de perfil personalizada para cada usuário, fornecendo informações 
-    //             detalhadas sobre suas atividades no servidor e histórico de compras.`
-    //         },
-    //         {
-    //             text: `Vale ressaltar que o serviço de hospedagem do site foi implementado com o 
-    //             onRender, um serviço gratuito que mantém o site em standby até que um visitante o acesse. 
-    //             Isso pode resultar em lentidão durante o primeiro acesso.`
-    //         },
-    //         {
-    //             text: `Pro fim, os commits foram escondidos para proteger a chave secret do stripe, tendo 
-    //             em vista que o repositório se encontra público. O stripe não envia eventos de teste para 
-    //             o webhook, então não é possível testar a integração.`
-    //         },
-    //         {
-    //             url: "https://regnacraft.onrender.com/",
-    //             urlText: "Link do projeto rodando"
-    //         },
-    //         {
-    //             url: "https://github.com/renanmaitan/website-mine",
-    //             urlText: "Link do repositório"
-    //         },
-    //         {
-    //             text: `A seguir, algumas imagens do site:`
-    //         },
-    //         {
-    //             imageSrc: "assets/imgs/project-imgs/regnacraft/1.png",
-    //             imageAlt: "RegnaCraft Screenshot 1"
-    //         },
-    //         {
-    //             imageSrc: "assets/imgs/project-imgs/regnacraft/2.png",
-    //             imageAlt: "RegnaCraft Screenshot 2"
-    //         },
-    //         {
-    //             imageSrc: "assets/imgs/project-imgs/regnacraft/3.png",
-    //             imageAlt: "RegnaCraft Screenshot 3"
-    //         },
-    //         {
-    //             imageSrc: "assets/imgs/project-imgs/regnacraft/4.png",
-    //             imageAlt: "RegnaCraft Screenshot 4"
-    //         },
-    //         {
-    //             imageSrc: "assets/imgs/project-imgs/regnacraft/5.png",
-    //             imageAlt: "RegnaCraft Screenshot 5"
-    //         },
-    //         {
-    //             imageSrc: "assets/imgs/project-imgs/regnacraft/6.png",
-    //             imageAlt: "RegnaCraft Screenshot 6"
-    //         }
-    //     ]
-    // },
+    "catalogo-api": {
+        coverSrc: "assets/imgs/projects/catalogo-api-project.png",
+        title: "Catagolo API",
+        subtitle: "Esse texto contém: repositório no GitHub",
+        content: [
+            {
+                text: `A API foi desenvolvida para oferecer funcionalidades de gerenciamento de produtos 
+                com: nome, valor e foto  
+                de forma organizada e segura. As operações de atualização, deleção e criação de produtos 
+                estão disponíveis apenas para usuários pré-cadastrados no sistema, garantindo a segurança 
+                dos dados. Da mesma forma, a criação de novos usuários também requer autenticação.`
+            },
+            {
+                text: `As tecnologias utilizadas incluem o Spring Boot para o desenvolvimento da aplicação, 
+                Spring Security para garantir a segurança das operações sensíveis, e JJWT para autenticação 
+                de usuários por meio de tokens JWT`
+            },
+            {
+                text: `A seguir as principais dependências utilizadas no projeto:`
+            },
+            {
+                text: `• springdoc-openapi-starter-webmvc-ui: Para documentação da API usando o OpenAPI. (swagger)`
+            },
+            {
+                text: `• spring-boot-starter-security: Para segurança da aplicação.`
+            },
+            {
+                text: `• jjwt-api, jjwt-impl, jjwt-jackson: Para autenticação JWT.`
+            },
+            {
+                text: `• spring-boot-starter-web: Para desenvolvimento de aplicativos da web.`
+            },
+            {
+                text: `• lombok: Para redução de código boilerplate.`
+            },
+            {
+                text: `• spring-boot-starter-data-jpa: Para persistência de dados usando JPA.`
+            },
+            {
+                text: `• postgresql: Para conexão com o banco de dados PostgreSQL.`
+            },
+            {
+                text: `• spring-boot-starter-hateoas: Para suporte a HATEOAS.`
+            },
+            {
+                url: "https://github.com/renanmaitan/catalogo-api",
+                urlText: "Link do repositório"
+            }
+        ]
+    },
     "connect-med": {
         coverSrc: "assets/imgs/projects/connect-med-project.jpeg",
         title: "Connect Med",
